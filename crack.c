@@ -10,7 +10,7 @@
 #define C_NAME "./crack"          //command name
 #define S_LIMIT 100000000         //words limit
 #define C_LIMIT 100               //characters limit  
-#define W_LIST "word_list"         //wordlist file
+#define W_LIST "word_list"        //wordlist file
 
 int p_crack(char* pwd, const char* passwd);
 void yell(void);
@@ -70,11 +70,12 @@ int p_crack(char* pwd, const char* passwd)
                 printf("\nNumber of words processed:%d\n", i + 1);
 
                 strcpy(pwd,  words);
+                
+                fclose(w_list);
+                
                 return 1;               //we succeeded
             }
 
-            //debug
-            //printf("words:%d\n", i+1);
         }
     }
 
