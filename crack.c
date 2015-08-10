@@ -18,7 +18,7 @@ void yell(void);
 int main(int argc, char* argv[])
 {
     //lets yell at the user if there are too many or no arguments at all
-    if (argc > 2 || argc == 1)
+    if (argc != 2)
     {
         yell();
         return 1;
@@ -88,6 +88,6 @@ int p_crack(char* pwd, const char* passwd)
 void yell(void)
 {
     printf("That's not how you should use this program!\n"
-            "How to use: %s [EncryptedPassword]\n"
+            "How to use: %s Encryptedpassword\n"
             "e.g.:%s 50JkB0IlGZ0mw\n", C_NAME, C_NAME);
 }
