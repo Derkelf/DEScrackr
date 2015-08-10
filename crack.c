@@ -7,7 +7,7 @@
 #include <string.h>
 #include <stdlib.h>
 
-#define C_NAME "./crack"          //command name
+#define C_NAME "./DEScrackr"      //command name
 #define S_LIMIT 100000000         //words limit
 #define C_LIMIT 100               //characters limit  
 #define W_LIST "word_list"        //wordlist file
